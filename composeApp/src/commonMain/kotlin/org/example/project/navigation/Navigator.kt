@@ -41,7 +41,7 @@ fun Navigation(navigator: Navigator) {
             val idFromPath = it.path<Long>("id")
             val isAddExpense = idFromPath?.let { id ->
                 viewModel.getExpenseById(id) }
-            ExpenseDetailScreen(isAddExpense){
+            ExpenseDetailScreen(isAddExpense, viewModel.getCategorys()){
                 expense->
                 if(isAddExpense==null){
                     viewModel.addExpense(expense)

@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import org.example.project.domain.ExpenseRepository
 import org.example.project.model.Expense
+import org.example.project.model.ExpenseCategory
 
 class ExpensesViewModel(private val expenseRepository: ExpenseRepository) : ViewModel() {
 
@@ -58,6 +59,10 @@ class ExpensesViewModel(private val expenseRepository: ExpenseRepository) : View
 
     fun getExpenseById(id: Long): Expense {
         return expenseRepository.getAllExpenses().first { it.id == id }
+    }
+
+    fun getCategorys(): List<ExpenseCategory>{
+        return expenseRepository.getAllCategories()
     }
 
 
