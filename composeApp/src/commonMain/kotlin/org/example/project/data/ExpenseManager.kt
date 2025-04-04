@@ -12,25 +12,25 @@ object ExpenseManager {
             id = currentId++,
             amount = 300.0,
             category = ExpenseCategory.GROCERIES,
-            description = "Expense description"
+            description = "Expense description GROCERIES"
         ),
         Expense(
             id = currentId++,
             amount = 200.0,
             category = ExpenseCategory.PARTY,
-            description = "Expense description"
+            description = "Expense description PARTY"
         ),
         Expense(
             id = currentId++,
             amount = 300.0,
             category = ExpenseCategory.SNACKS,
-            description = "Expense description"
+            description = "Expense description SNACKS"
         ),
         Expense(
             id = currentId++,
             amount = 400.0,
             category = ExpenseCategory.COFFEE,
-            description = "Expense description"
+            description = "Expense description COFFEE"
         ),
         Expense(
             id = currentId++,
