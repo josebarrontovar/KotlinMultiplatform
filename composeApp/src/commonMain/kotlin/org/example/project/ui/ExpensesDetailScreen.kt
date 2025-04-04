@@ -104,7 +104,7 @@ fun ExpenseDetailScreen(
             ExpensesDescription(description, onDescriptionChange = { its -> description = its })
 
             ButtonSave(onClicketButton = {
-                Log.d("JGBT Click")
+                print("JGBT Click")
             })
 
 
